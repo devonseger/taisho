@@ -1,4 +1,4 @@
-export default function (c, client, handler) {
+export default function (c, client, handler) { 
     c.guild.fetchAuditLogs({ actionType: 12 })  // Use the correct integer value for CHANNEL_CREATE
       .then(audit => {
         const entry = audit.entries.first();
